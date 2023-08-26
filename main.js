@@ -1,9 +1,7 @@
 const myButton = document.getElementById("myButton");
-const imageContainer = document.getElementById("imageContainer");
+const textButon = document.getElementById("text");
+
 
 myButton.addEventListener("click", function() {
-    const newImage = document.createElement("img");
-    newImage.src = "Aki2.jpeg";
-    newImage.alt = "Aki";
-    imageContainer.appendChild(newImage);
+   textButon.textContent = "Buna, numele meu este AKI!"
 });
