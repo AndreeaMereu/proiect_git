@@ -22,14 +22,19 @@ const variantaRecompensa = {
 const { recompensaA, recompensaB, recompensaC} = variantaRecompensa;
 const recompensaPrimita = recompensaA;
 
-//array function filter
+//filter
 const myButton1 = document.getElementById("myButton1");
 const distantaTraseu = document.getElementById("distanta");
+const apaRece = document.getElementById("apa");
 
 myButton1.addEventListener("click", function() {
    distantaTraseu.textContent = "Cand ies la plimbare imi place sa parcurg: " + imiPlaceSaMerg + " km";
+   apaRece.textContent = "Cand iesi la o plimbare pe gustul meu imi place sa beau " + beauApa;
 });
 
 const kmDoriti = [ 2, 22, 31, 5];
 const imiPlaceSaMerg = kmDoriti.filter((el) => el > 10);
 
+//map
+const apaMulta = [3];
+const beauApa = apaMulta.map((el) => el + " litri");
